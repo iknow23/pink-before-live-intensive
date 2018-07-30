@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo-link" href="#">
+        <img class="page-header__logo-picture" src="http://placehold.it/150x100" alt="Логотип сайта">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="page-main">
+    <h1 class="visuaaly-hidden">Сайт мобильного приложения Пинк</h1>
 
-    <p>Репозиторий создан для обучения на интенсивном курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <section class="promo">
+      <div class="promo-wrapper">
+        <h2 class="promo__title">Взгляните на жизнь иначе</h2>
+        <a href="#" class="promo__link">Скачать приложение</a>
+        <ul class="promo__list">
+          <li class="promo__item">
+            <img class="promo__picture promo__picture--apple" src="http://placehold.it/150x100" alt="Изображение операционной системы">
+          </li>
+          <li class="promo__item">
+            <img class="promo__picture promo__picture--android" src="http://placehold.it/150x100" alt="Изображение операционной системы">
+          </li>
+          <li class="promo__item">
+            <img class="promo__picture promo__picture--windows" src="http://placehold.it/150x100" alt="Изображение операционной системы">
+          </li>
+        </ul>
+        <p class="promo__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+      
+    <section class="about-app">
+      <h2 class="visually-hidden">О приложении</h2>
+      <b class="about-app__first-title">
+        Устали от серости мегаполиса?
+      </b>
+      <b class="about-app__second-title">
+        Нам есть, что вам предложить!
+      </b>
+      <ul class="about-app__list">
+        <li class="about-app__item">
+          <p class="about-app__item--title">
+            Поднимает настроение
+          </p>
+          <p class="about-app__item--description">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </li>
+        <li class="about-app__item">
+          <p class="about-app__item--title">
+            Меняет мир вокруг
+          </p>
+          <p class="about-app__item--description">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="about-app__item">
+          <p class="about-app__item--title">
+            Заводит новых друзей
+          </p>
+          <p class="about-app__item--description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <div class="about-app__data">
+        <b class="about-app__data--title">
+            Эффект на 24 часа!
+        </b>
+        <p class="about-app__data--description">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a class="about-app__data--link" href="#">Узнать больше об исследовании</a>
+      </div>
+    </section>
+    
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="visually-hiddden">Отзывы о нас</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">
+              "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+            </p>
+            <cite class="reviews__author-name">
+              <b>Николай Петров</b>
+              <p>25 лет, водитель трамвая</p>
+            </cite>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">
+              "Любой другой отзыв"
+            </p>
+            <cite class="reviews__author-name">
+              <b>Любой другой автор</b>
+              <p>Любой другой автор</p>
+            </cite>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">
+              "Любой другой отзыв"
+            </p>
+            <cite class="reviews__author-name">
+              <b>Любой другой автор</b>
+              <p>Любой другой автор</p>
+            </cite>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+  </main>
 
-  </body>
+
+
+</body>
 </html>
