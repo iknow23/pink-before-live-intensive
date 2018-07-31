@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Пинк: Фотогалерея</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo logo">
+        <a class="logo__link" href="#">
+          <img class="logo__picture" src="http://placehold.it/150x100" alt="Логотип сайта">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="form-page-main">
+    <section class="form-promo">
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
+    
+    <section class="competition">
+      <h2 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+      <form class="competition__form" action="https://echo.htmlacademy.ru" method="get">
+      
+        <fieldset class="competition__name">
+          <div class="competition__group">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" placeholder="Укажите фамилию*">
+          </div>
+          <div class="competition__group">
+            <label for="first-name">Имя:</label>
+            <input type="text" id="first-name" placeholder="Введите ваше имя*">
+          </div>
+          <div class="competition__group">
+            <label for="patronymic">Отчество:</label>
+            <input type="text" id="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+
+        <fieldset class="competition__app">
+          <legend>С каким приложением путешествовали?</legend>
+            <ul>
+              <li class="competition__option competition__option--radio">
+                <input class="visually-hidden competition__input--radio" type="radio" name="app" value="ios" id="ios">
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="competition__option competition__option--radio">
+                <input class="visually-hidden competition__input--radio" type="radio" name="app" value="android" id="android">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="competition__option competition__option--radio">
+                <input class="visually-hidden competition__input--radio" type="radio" name="app" value="windows" id="windows">
+                <label for="windows">Windows Phone</label>
+              </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="competition__contact">
+          <legend>Контактная инфомрация</legend>
+          <div class="competition__group">
+            <input type="text" id="number" placeholder="Номер, пожалуйста">
+            <label for="number">Номер телефона</label>
+          </div>
+          <div class="competition__group">
+            <input type="text" id="mail" placeholder="Введите почту*">
+            <label for="mail">Адрес почты</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="competition__achievements">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul>
+            <li class="competition__option competition__option--checkbox">
+              <input class="visually-hidden competition__input--checkbox" type="checkbox" name="shark" id="shark" checked>
+		      <label for="shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="competition__option competition__option--checkbox">
+              <input class="visually-hidden competition__input--checkbox" type="checkbox" name="beach" id="beach" checked>
+		      <label for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="competition__option competition__option--checkbox">
+              <input class="visually-hidden competition__input--checkbox" type="checkbox" name="chak" id="chak">
+		      <label for="chak">Видел Чака Норриса</label>
+            </li>
+            <li class="competition__option competition__option--checkbox">
+              <input class="visually-hidden competition__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
+		      <label for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="competition__option competition__option--checkbox">
+              <input class="visually-hidden competition__input--checkbox" type="checkbox" name="tower" id="tower" checked>
+		      <label for="tower">Удержал башню</label>
+            </li>
+            <li class="competition__option competition__option--checkbox">
+              <input class="visually-hidden competition__input--checkbox" type="checkbox" name="hotel" id="hotel">
+		      <label for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="competition__emotions">
+          <legend>Опишите свои эмоции</legend>
+          <textarea name="" id="" cols="30" rows="10">Можно прям в красках, не стесняйтесь в выражениях</textarea>
+        </fieldset>
+
+        <button type="submit">Отправить форму</button>
+        <p class="competition__description"><sup>*</sup>&ndash;Обязательные для заполнения поля</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo logo">
+        <a class="logo__link" href="#">
+          <img class="logo__picture" src="http://placehold.it/150x100" alt="Логотип сайта">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#">
+          <img class="copyright__picture" src="http://placehold.it/150x100" alt="Логотип компании разработчика">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+<!--
+HTML
+<form>
+    <div class="field">
+        <label class="placeholder" for="email">
+            Email Address
+            <span class="red">*</span>
+        </label>
+        <input id="email" type="text" />
+    </div>
+</form>
+CSS
+.field {
+    position: relative;
+    height: 30px;
+    width: 200px;
+}
+input, label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-indent: 5px;
+    line-height: 30px;
+-->
+
+
+</body>
+</html>
